@@ -9,9 +9,11 @@ public abstract class Vehicle {
     private String vehicleType;
     private int ageLimit;
 
-    public Vehicle() {
-        nrOfVehicles++;
-        dr = null;
+    public Vehicle(int distance, int vehicleRange, String vehicleType, int ageLimit) {
+        this.distance = distance;
+        this.vehicleRange = vehicleRange;
+        this.vehicleType = vehicleType;
+        this.ageLimit = ageLimit;
     }
 
     public static int getNrOfVehicles() {
